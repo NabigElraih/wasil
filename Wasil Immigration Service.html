@@ -65,6 +65,18 @@ header.solid .lb{background:var(--card);border-color:var(--line)}
 .lm li[aria-selected=true] svg{opacity:1}
 .lm li[data-l=ar] .nm{font-family:'IBM Plex Sans Arabic',sans-serif}
 .pw{position:relative}
+:root[data-palette=blue]:not([data-theme=dark]) .hero{--ink:#f2f2f5;--mid:#e2e3ec;--m2:#eceef4;--m3:#c3c7d6;--sky:#eef0f5;--warm:#dfe1ea;--sun:#fff;--amber:#2fa56b;color:#1b1d26}
+:root[data-palette=blue]:not([data-theme=dark]) .slide::after{background:linear-gradient(90deg,rgba(242,242,245,.92),rgba(242,242,245,0) 72%)}
+:root[data-palette=blue]:not([data-theme=dark])[dir=rtl] .slide::after{background:linear-gradient(270deg,rgba(242,242,245,.92),rgba(242,242,245,0) 72%)}
+:root[data-palette=blue]:not([data-theme=dark]) .copy p{color:#3d4152}
+:root[data-palette=blue]:not([data-theme=dark]) .hero .btn{background:#96f2b4;color:#0f1f3a}
+:root[data-palette=blue]:not([data-theme=dark]) .hero .btn.ghost{background:transparent;color:#1b1d26;border-color:rgba(27,29,38,.4)}
+:root[data-palette=blue]:not([data-theme=dark]) .arrow{color:#1b1d26;border-color:rgba(27,29,38,.3);background:rgba(255,255,255,.6)}
+:root[data-palette=blue]:not([data-theme=dark]) .dots button{background:rgba(27,29,38,.2)}
+:root[data-palette=blue]:not([data-theme=dark]) header:not(.solid){color:#1b1d26}
+:root[data-palette=blue]:not([data-theme=dark]) header:not(.solid) .ico,:root[data-palette=blue]:not([data-theme=dark]) header:not(.solid) .lb,:root[data-palette=blue]:not([data-theme=dark]) header:not(.solid) .seg{border-color:rgba(27,29,38,.18);background:rgba(255,255,255,.55)}
+:root[data-palette=blue]:not([data-theme=dark]) .slide:nth-child(2) [fill="#0b1f2a"]{fill:#9aa1b8}
+:root[data-palette=blue]:not([data-theme=dark]) .slide:nth-child(4) path[fill="#0b1f2a"]{fill:#aeb4c8}
 .pbc{width:20px;height:20px;border-radius:50%;border:2px solid currentColor;display:block;box-shadow:inset 0 0 0 1px rgba(11,31,42,.25)}
 .pp{position:absolute;top:calc(100% + 10px);inset-inline-end:0;min-width:190px;padding:6px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 40px -12px rgba(5,15,30,.35);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:30}
 .pp.open{opacity:1;visibility:visible;transform:none}
@@ -106,13 +118,13 @@ header.solid .pal button{border-color:var(--line)}
 .pal button[aria-pressed=true]{outline:2px solid var(--amber);outline-offset:2px}
 :root{--mid:#1f6f78;--m2:#14343f;--m3:#0f3a46;--sky:#1b3b52;--warm:#e08e45;--sun:#fde7b0}
 :root[data-palette=violet]{--bg:#f7f4ff;--fg:#241a3f;--mut:#5d5480;--card:#fff;--line:#ddd5f3;--sea:#6a47d1;--ink:#2e1f5e;--amber:#ffd27a;--mid:#8f6fe0;--m2:#3a2a6b;--m3:#4a3590;--sky:#4a3a8c;--warm:#e58fb4;--sun:#ffe9c2}
-:root[data-palette=blue]{--bg:#fff;--fg:#14233b;--mut:#566480;--card:#f6f9fd;--line:#e2e8f2;--sea:#2f6fd0;--ink:#1a2f52;--amber:#659deb;--mid:#659deb;--m2:#2a4d86;--m3:#4a76b8;--sky:#3a5f9a;--warm:#cfe0fa;--sun:#f1f6ff}
+:root[data-palette=blue]{--bg:#f2f2f5;--fg:#1b1d26;--mut:#5b5f6e;--card:#fff;--line:#dcdce4;--sea:#1f8a56;--ink:#1d2b3a;--amber:#96f2b4;--mid:#96f2b4;--m2:#2f7d5a;--m3:#4fae7f;--sky:#2c4a5e;--warm:#bff5d0;--sun:#f2fff6}
 :root[data-palette=blue] .card{box-shadow:0 10px 28px -16px rgba(20,35,59,.22)}
 :root[data-palette=blue] .btn{color:#0f1f3a}
 :root[data-palette=slate]{--bg:#f4f6fb;--fg:#0e1a38;--mut:#4f5b7a;--card:#fff;--line:#dbe1f0;--sea:#0b276b;--ink:#071a4a;--amber:#f4c46b;--mid:#0b276b;--m2:#12348a;--m3:#1c4aa8;--sky:#2a56b0;--warm:#6f93e0;--sun:#ffe9b8}
 :root[data-theme=dark][data-palette=slate]{--bg:#060d1f;--fg:#e9eefb;--mut:#a0acce;--card:#0f1a36;--line:#1f2f5c;--sea:#7f9bea}
 :root[data-theme=dark][data-palette=violet]{--bg:#130d24;--fg:#efeaff;--mut:#b3a8d6;--card:#1e1536;--line:#35285c;--sea:#a98cff}
-:root[data-theme=dark][data-palette=blue]{--bg:#0a1426;--fg:#e8f0fc;--mut:#9fb2d3;--card:#121f38;--line:#243a63;--sea:#9db9ea}
+:root[data-theme=dark][data-palette=blue]{--bg:#0a1426;--fg:#e8f0fc;--mut:#9fb2d3;--card:#121f38;--line:#243a63;--sea:#96f2b4}
 .art [fill="#0b1f2a"]{fill:var(--ink)}
 .art [fill="#1f6f78"]{fill:var(--mid)}
 .art [fill="#0f3a46"]{fill:var(--m3)}
@@ -238,7 +250,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
     <div class="pp" id="pp" role="group" aria-label="Color set">
      <button data-p="green" aria-pressed="true"><i style="background:#1f6f78"></i><span data-i="p_g">Green</span></button>
      <button data-p="violet" aria-pressed="false"><i style="background:#8f6fe0"></i><span data-i="p_v">Violet</span></button>
-     <button data-p="blue" aria-pressed="false"><i style="background:#fff"></i><span data-i="p_w">White</span></button>
+     <button data-p="blue" aria-pressed="false"><i style="background:#f2f2f5"></i><span data-i="p_w">White</span></button>
      <button data-p="slate" aria-pressed="false"><i style="background:#0b276b"></i><span data-i="p_n">Navy</span></button>
     </div>
    </div>
@@ -419,7 +431,7 @@ function setTheme(t){R.dataset.theme=t;store('theme',t);syncTheme()}
 $('#tl').onclick=()=>setTheme('light');$('#td').onclick=()=>setTheme('dark');
 const st=load('theme');R.dataset.theme=st||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
 syncTheme();
-const PC={green:'#1f6f78',violet:'#8f6fe0',blue:'#ffffff',slate:'#0b276b'};
+const PC={green:'#1f6f78',violet:'#8f6fe0',blue:'#f2f2f5',slate:'#0b276b'};
 function setPal(p){R.dataset.palette=p;store('palette',p);$('#pbc').style.background=PC[p];$$('.pp button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.p===p)))}
 const pb=$('#pb'),pp=$('#pp');
 pb.onclick=e=>{e.stopPropagation();const o=!pp.classList.contains('open');pp.classList.toggle('open',o);pb.setAttribute('aria-expanded',String(o))};
