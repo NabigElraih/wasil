@@ -65,6 +65,8 @@ header.solid .lb{background:var(--card);border-color:var(--line)}
 .lm li[aria-selected=true] svg{opacity:1}
 .lm li[data-l=ar] .nm{font-family:'IBM Plex Sans Arabic',sans-serif}
 .pw{position:relative}
+:root[data-palette=green] .slide::after{background:linear-gradient(90deg,rgba(110,46,39,.88),rgba(110,46,39,0) 72%)}
+:root[data-palette=green][dir=rtl] .slide::after{background:linear-gradient(270deg,rgba(110,46,39,.88),rgba(110,46,39,0) 72%)}
 :root[data-palette=green] .btn{color:#fff}
 :root[data-palette=green] .seg button[aria-pressed=true],:root[data-palette=green] .step::before{color:#fff}
 :root[data-palette=green] .band cite,:root[data-palette=green] .nums b{color:#ff8a8a}
